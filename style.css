@@ -1,0 +1,25 @@
+body {
+    background-size: cover;
+  }
+  
+  .scoreboard {
+    width: 620px;
+    height: 100vh;
+    background-color: #00000065;
+    color: #21ff08;
+    position: fixed;
+    inset: 0 0 0 auto;
+    display: grid;
+    grid-template-rows: 70px 1fr 70px;
+    overflow: auto;
+  }
+  
+  .scoreboard h1 {
+    padding: 5px;
+    border: solid black;
+    color: yellow;
+    background-color: rgb(20, 20, 40);
+    height: 50px;
+    text-align: center;
+  }
+  
