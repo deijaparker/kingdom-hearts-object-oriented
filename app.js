@@ -57,3 +57,31 @@ function switchTurn() {
     }
   }
   
+  function playRound(i) {
+    const roundInfo = document.createElement("li");
+    roundInfo.innerHTML = `-------------------- Round ${i} --------------------`;
+    roundList.appendChild(roundInfo);
+  
+    while (currentPlayer.hull > 0 && currentDefender.hull > 0) {
+      currentPlayer.attack(currentDefender);
+      if (currentDefender.hull <= 0) {
+        break;
+      }
+      switchTurn();
+    }
+  
+    const winnerInfo = document.createElement("li");
+    winnerInfo.innerHTML = `Winner of Round ${i} is ${currentPlayer.name} with ${currentPlayer.hull} HP remaining`;
+    roundList.appendChild(winnerInfo);
+    console.log(
+      `Round ${i} Winner: ${currentPlayer.name} HP: ${currentPlayer.hull}`
+    );
+  
+    if (currentDefender.hull <= 0) {
+      enemyShip = createEnemyShip();
+      currentDefender = enemyShip;
+    }
+  
+    roundNumber++;
+  }
+  
