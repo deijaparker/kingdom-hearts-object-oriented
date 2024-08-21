@@ -110,3 +110,10 @@ body {
     cursor: pointer;
   }
   
+  .round li {
+    border: solid;
+    margin-top: 15px;
+    padding: 13px;
+    font-size: 30px;
+  }
+  
