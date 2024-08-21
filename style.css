@@ -1,119 +1,118 @@
 body {
-    background-size: cover;
-  }
-  
-  .scoreboard {
-    width: 620px;
-    height: 100vh;
-    background-color: #00000065;
-    color: #21ff08;
-    position: fixed;
-    inset: 0 0 0 auto;
-    display: grid;
-    grid-template-rows: 70px 1fr 70px;
-    overflow: auto;
-  }
-  
-  .scoreboard h1 {
-    padding: 5px;
-    border: solid black;
-    color: yellow;
-    background-color: rgb(20, 20, 40);
-    height: 50px;
-    text-align: center;
-  }
-  
-  .screen {
-    border: solid black;
-    height: 95vh;
-    width: 800px;
-    margin: auto;
-    background-color: rgba(0, 0, 0, 0.9);
-    border-radius: 20px;
-  }
-  
-  .hero {
-    margin: 10px;
-    border: solid white;
-    height: 15vh;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .hero img {
-    height: 100%;
-  }
+  background-size: cover;
+}
 
-  .attackingSpace {
-    margin: 10px;
-    height: 54.6vh;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .attackingSpace img {
-    display: block;
-    width: 100%;
-    opacity: 70%;
-  }
-  
-  .enemyShipAttack {
-    transform: translateY(0px);
-    height: 15%;
-    transition: transform 1s ease-in-out;
-    transform: translateY(515px);
-    display: none;
-  }
-  
-  .heroAttack {
-    height: 15%;
-    transition: transform 1s ease-in-out;
-  }
-  
-  .heroAttack.start {
-    transform: translateY(515px);
-  }
-  
-  .heroAttack.active {
-    transform: translateY(0px);
-  }
-  
-  .enemyShip {
-    margin: 10px;
-    border: solid white;
-    height: 15vh;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .enemyShip img {
-    height: 100%;
-    display: none;
-  }
-  
-  #enemyShip1 {
-    display: block;
-  }
-  
-  .controls {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-  }
-  
-  .controls button {
-    margin: 5px;
-    border-radius: 10px;
-    border: none;
-    background-color: orange;
-    font-size: 30px;
-    font-weight: 500;
-    cursor: pointer;
-  }
-  
-  .round li {
-    border: solid;
-    margin-top: 15px;
-    padding: 13px;
-    font-size: 30px;
-  }
-  
+.scoreboard {
+  width: 620px;
+  height: 100vh;
+  background-color: #00000065;
+  color: #21ff08;
+  position: fixed;
+  inset: 0 0 0 auto;
+  display: grid;
+  grid-template-rows: 70px 1fr 70px;
+  overflow: auto;
+}
+
+.scoreboard h1 {
+  padding: 5px;
+  border: solid black;
+  color: yellow;
+  background-color: rgb(20, 20, 40);
+  height: 50px;
+  text-align: center;
+}
+
+.screen {
+  border: solid black;
+  height: 95vh;
+  width: 800px;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+  border-radius: 20px;
+}
+
+.hero {
+  margin: 10px;
+  border: solid white;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+}
+
+.hero img {
+  height: 100%;
+}
+
+.attackingSpace {
+  margin: 10px;
+  height: 54.6vh;
+  display: flex;
+  justify-content: center;
+}
+
+.attackingSpace img {
+  display: block;
+  width: 100%;
+  opacity: 70%;
+}
+
+.enemyShipAttack {
+  transform: translateY(0px);
+  height: 15%;
+  transition: transform 1s ease-in-out;
+  transform: translateY(515px);
+  display: none;
+}
+
+.heroAttack {
+  height: 15%;
+  transition: transform 1s ease-in-out;
+}
+
+.heroAttack.start {
+  transform: translateY(515px);
+}
+
+.heroAttack.active {
+  transform: translateY(0px);
+}
+
+.enemyShip {
+  margin: 10px;
+  border: solid white;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+}
+
+.enemyShip img {
+  height: 100%;
+  display: none;
+}
+
+#enemyShip1 {
+  display: block;
+}
+
+.controls {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.controls button {
+  margin: 5px;
+  border-radius: 10px;
+  border: none;
+  background-color: orange;
+  font-size: 30px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.round li {
+  border: solid;
+  margin-top: 15px;
+  padding: 13px;
+  font-size: 30px;
+}
