@@ -43,3 +43,38 @@ body {
   .hero img {
     height: 100%;
   }
+
+  .attackingSpace {
+    margin: 10px;
+    height: 54.6vh;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .attackingSpace img {
+    display: block;
+    width: 100%;
+    opacity: 70%;
+  }
+  
+  .enemyShipAttack {
+    transform: translateY(0px);
+    height: 15%;
+    transition: transform 1s ease-in-out;
+    transform: translateY(515px);
+    display: none;
+  }
+  
+  .heroAttack {
+    height: 15%;
+    transition: transform 1s ease-in-out;
+  }
+  
+  .heroAttack.start {
+    transform: translateY(515px);
+  }
+  
+  .heroAttack.active {
+    transform: translateY(0px);
+  }
+  
