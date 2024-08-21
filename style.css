@@ -23,3 +23,23 @@ body {
     text-align: center;
   }
   
+  .screen {
+    border: solid black;
+    height: 95vh;
+    width: 800px;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 20px;
+  }
+  
+  .hero {
+    margin: 10px;
+    border: solid white;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .hero img {
+    height: 100%;
+  }
