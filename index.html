@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Kingdom Hearts Battle</title>
+    <meta name="description" content="A Kingdom Hearts-themed turn-based battle game." />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <audio id="background-audio" autoplay loop>
+      <source src="kingdom-hearts.mp3" type="audio/mpeg" />
+    </audio>
+    <div class="screen">
+      <div class="enemyShip">
+        <img src="https://www.pikpng.com/pngl/m/7-76730_free-png-download-sora-kingdom-hearts-2-shoes.png" alt="" id="enemyShip1">
+        <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExM282bXExanN1a3B4YmpnYTNhdTBtaWswY3llOTdoNGozbTZ2aXExZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/sSSEWYwsWqEItRZJvr/giphy.webp" alt="" id="enemyShip2">
+      </div>
+
+      <div class="attackingSpace">
+        <img
+          src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExeW4ybHYzMHJtODA2eXQ5ZzJpaXI0Y2Nidm5kMDlremsyd21qNzFseCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/46FBLqgHYu5mE/200.webp" alt="">
+      </div>
+      <div class="hero">
+        <img src="https://www.pikpng.com/pngl/m/548-5489744_heartless-vs-q-continuum-st-heartless-kingdom-hearts.png" alt="">
+      </div>
+      <div class="controls">
+        <button class="attack">Attack</button>
+        <button class="surrender">Surrender</button>
+        <button class="restart">Play Again</button>
+      </div>
+    </div>
+    <div class="scoreboard">
+      <h1>Rounds Scoreboard:</h1>
+      <ul class="round"></ul>
+    </div>
+    <script src="app.js" async defer></script>
+  </body>
+</html>
