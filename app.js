@@ -56,7 +56,7 @@ function switchTurn() {
       currentDefender = enemyShip;
     }
   }
-  
+
   function playRound(i) {
     const roundInfo = document.createElement("li");
     roundInfo.innerHTML = `-------------------- Round ${i} --------------------`;
@@ -84,4 +84,17 @@ function switchTurn() {
   
     roundNumber++;
   }
+  
+  document.querySelector(".attack").addEventListener("click", function () {
+    if (roundNumber <= 6) {
+      if (hero.hull > 0) {
+        playRound(roundNumber);
+      }
+    } else {
+      const gameOverInfo = document.createElement("li");
+      gameOverInfo.innerHTML = `Game Over! All rounds completed.`;
+      roundList.appendChild(gameOverInfo);
+      console.log("Game Over! All rounds completed.");
+    }
+  });
   
