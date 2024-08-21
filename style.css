@@ -78,3 +78,35 @@ body {
     transform: translateY(0px);
   }
   
+  .enemyShip {
+    margin: 10px;
+    border: solid white;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .enemyShip img {
+    height: 100%;
+    display: none;
+  }
+  
+  #enemyShip1 {
+    display: block;
+  }
+  
+  .controls {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .controls button {
+    margin: 5px;
+    border-radius: 10px;
+    border: none;
+    background-color: orange;
+    font-size: 30px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
