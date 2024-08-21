@@ -46,3 +46,14 @@ function createEnemyShip() {
 
 let currentPlayer = hero;
 let currentDefender = enemyShip;
+
+function switchTurn() {
+    if (currentPlayer === hero) {
+      currentPlayer = enemyShip;
+      currentDefender = hero;
+    } else {
+      currentPlayer = hero;
+      currentDefender = enemyShip;
+    }
+  }
+  
